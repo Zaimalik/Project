@@ -1,0 +1,14 @@
+1.Include Nokia5110 library
+2.Include BMP280 sensor library
+3.Make needed configuration for Nokia5110 LCD module connections 
+(CLK: A9, DIN: B15, D/C: A8, CE: A11, RST: A10) 
+4.Set alarm LED pin (B7) to 0 
+5.Define alarm parameters (ie: for altitude 2500 m)
+6.Make needed sensor configuration (SDA: B11, SCL: B10)
+7.Define sensor I2C address
+8.Initialize screen
+9.Chek sensor readings (if could not read give connection error message)
+10.Read sensor and get temperature, pressure and altitude value
+11.Print output in the screen
+12.If readings exceed normal parameter -->  alarm on
+13.Update readings every 2 minute 
